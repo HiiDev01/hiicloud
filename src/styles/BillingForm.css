@@ -1,0 +1,267 @@
+.BillingForm_con{
+  width: 100%;
+}
+.personal_info{
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+}
+.billing_head_title{
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-two);
+  font-weight: 300;
+  font-size: 1.15rem;
+  margin: 0px 0px 10px 0px;
+  color: var(--cg-two);
+  text-transform: capitalize;
+  position: relative;
+}
+.billing_head_title::before{
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  background-color: var(--bg-five);
+}
+.billing_head_title::after{
+  position: absolute;
+  content: '';
+  width: 40%;
+  height: 1px;
+  top: 50%;
+  right: 0;
+  background-color: var(--bg-five);
+}
+.billing_name_con{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0px 0px 15px 0px;
+}
+.Names{
+  width: 100%;
+  border: 1px solid var(--bg-five);
+  display: flex;
+  padding: 0px 15px;
+  align-items: center;
+}
+.Names label{
+  color: var(--cg-one);
+}
+.Names input{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--cg-four);
+  font-family: var(--font-two);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.street_con{
+  width: 100%;
+  border: 1px solid var(--bg-five);
+  display: flex;
+  padding: 0px 10px;
+  align-items: center;
+  margin: 0px 0px 10px 0px;
+}
+.AddressInput{
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 0.9rem;
+  color: var(--cg-four);
+  font-weight: 300;
+  font-family: var(--font-two);
+  border: none;
+  outline: none;
+}
+.street_con span{
+  color: var(--cg-one);
+}
+.place_con{
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 15px 0px;
+  gap: 10px;
+}
+.place{
+  width: 100%;
+  border: 1px solid var(--bg-five);
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.place span{
+  color: var(--cg-one);
+}
+.place input{
+  width: 100%;
+  padding: 10px;
+  color: var(--cg-one);
+  font-family: var(--font-two);
+  font-weight: 300;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+}
+.place select{
+  flex: 1;
+  padding: 10px 0px;
+  outline: none;
+  color: var(--cg-one);
+  font-weight: 300;
+  font-family: var(--font-two);
+  border: none;
+}
+.country{
+  border: 1px solid var(--bg-five);
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.country span{
+  color: var(--cg-one);
+}
+.country select{
+  flex: 1;
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  font-family: var(--font-two);
+  color: var(--cg-one);
+  font-weight: 300;
+  font-size: 0.9rem;
+  outline: none;
+  border: none;
+}
+
+.acct_password{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.acctpassword{
+  width: 100%;
+  border: 1px solid var(--bg-five);
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.acctpassword span{
+  color: var(--cg-one);
+}
+.acctpassword input{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--cg-one);
+  font-weight: 300;
+  font-family: var(--font-two);
+}
+
+.term_condition{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px #A94442;
+  overflow: hidden;
+  margin: 0px 0px 20px 0px;
+}
+.term{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  background-color: #F2DEDE;
+}
+.term span{
+  color: #A94442;
+}
+.term p{
+  color: #A94442;
+  font-family: var(--font-two);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.condition{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 10px ;
+}
+.condition p{
+  font-size: 0.9rem;
+  font-family: var(--font-two);
+  color: var(--cg-one);
+  font-weight: 300;
+}
+.condition p a{
+  color: var(--cg-two);
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.register_con{
+  width: 100%;
+  text-align: center;
+}
+.register_con input{
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: var(--fg-two);
+  font-weight: 400;
+  background-color: var(--cg-three);
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.register_con input:hover{
+  background-color: var(--cg-two);
+}
+@media (max-width: 1020px) {
+  .billing_name_con {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .acct_password {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Responsive at 780px */
+@media (max-width: 780px) {
+  .billing_head_title {
+    font-size: 1rem;
+  }
+
+  .billing_name_con {
+    gap: 10px;
+  }
+
+  .place_con {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .acct_password {
+    gap: 10px;
+  }
+
+  .term p {
+    font-size: 0.9rem;
+  }
+
+  .condition p {
+    font-size: 0.8rem;
+  }
+
+  .register_con input {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}

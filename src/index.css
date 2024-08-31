@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --fg-one: #02111B;
+  --fg-two: #f5f5f5;
+  --fg-three: linear-gradient(90deg, rgba(241, 198, 68, 0.85) 0%, rgba(148, 194, 59, 1) 35%, rgba(148, 194, 59, 1) 100%);
+  --fg-four : rgb(33, 37, 41);
+  --fg-five: rgb(173, 181, 189);
+  --fg-six : rgba(60, 69, 78, 0.427);
+  --fg-seven: #ffffff;
+  --font-one: "Poetsen One", sans-serif;
+  --font-two: "Roboto", sans-serif;
+  --bg-one: #94c23b;
+  --bg-two: #02111b;
+  --bg-three: #C3C440EE;
+  --bg-four: #212529;
+  --bg-five: #adb5bd;
+  --bg-six: #1d2736;
+  --bg-seven:  #787c81;
+  --bg-eight: #ffffff;
+  --bg-nine: #444444;
+  --bg-ten: #6ea8fe;
+  --cg-one: #777777;
+  --cg-two: #0E5077;
+  --cg-three: #337AB7;
+  --cg-four: #333;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+body{
+  background-color: var(--fg-one);
+  overflow-x: hidden;
+}
+.slick-slide div{
+  margin: 0px 10px;
+}
+.slick-prev, .slick-next{
+  background: none !important;
+  color: var(--bg-five) !important;
+  position: absolute;
+  left: 98%;
+}
+.slick-prev{
+  margin: 0px 0px 0px 0px;
+}
+.slick-prev::before{
+  background: var(--bg-six);
+  padding: 15px 5px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.slick-next {
+  margin: 0px 0px 0px 0px;
+  background-color: var(--bg-six);
+  padding: 10px;
+}
+.slick-next::before{
+  background: var(--bg-six);
+  padding: 15px 5px;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.slick-dots li button:before{
+  color: var( --bg-ten) !important;
 }

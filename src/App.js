@@ -1,24 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import ForgetPassword from './components/ForgetPassword';
+import ClientSide from './components/LoginSide';
+import Billing from './components/Billing';
+import Cart from './components/Cart';
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path='/' element={
+            <div className="LandingWrapper">
+              <header className="header">
+                <Navbar />
+              </header>
+              <div className='Main'>
+                <Home />
+              </div>
+            </div>
+          } />
+          <Route path='/clientside' element={
+            <div className="client_side_wrapper">
+              <ClientSide></ClientSide>
+            </div>
+          } />
+          <Route path='/ForgetPassword' element={
+            <div className="forgetPW_con">
+              <ForgetPassword></ForgetPassword>
+            </div>
+          } />
+          <Route path='/Billing' element={
+            <div className="Billing_con">
+              <Billing></Billing>
+            </div>
+          } />
+          <Route path='/Cart' element={
+            <div className='cart_wrapper'>
+              <Cart></Cart>
+            </div>
+          }/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

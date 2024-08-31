@@ -1,0 +1,165 @@
+.Billing{
+  width: 100%;
+  height: 100%;
+}
+.Billing_wrap{
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 2% 4%;
+}
+.billing_side{
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px var(--cg-one);
+  overflow: hidden;
+}
+.billing_main{
+  width: 80%;
+  padding: 10px;
+}
+.bx1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--fg-two);
+  color: var(--cg-one);
+  padding: 12px 10px;
+  font-family: var(--font-two);
+  margin: 0px 0px 10px 0px;
+}
+.bx2{
+  width: 100%;
+  font-size: 0.8rem;
+  color: var(--cg-four);
+  font: 400;
+  font-family: var(--font-two);
+  padding: 5px 10px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  word-spacing: wrap;
+  border-bottom: 1px solid var(--fg-two);
+}
+.bx3{
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--fg-two);
+  text-decoration: none;
+  font-family: var(--font-two);
+  color: var(--cg-one);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.bx3 span{
+  float: right;
+  color: var(--cg-four);
+}
+.bx3:hover{
+  background-color: var(--fg-two);
+}
+.bx4{
+  display: block;
+  width: 100%;
+  padding: 10px 10px;
+  border-bottom: 1px solid var(--fg-two);
+  text-decoration: none;
+  font-family: var(--font-two);
+  color: var(--cg-one);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.bx4 span{
+  float: right;
+  color: var(--cg-one);
+}
+.bx4:hover{
+  background-color: var(--fg-two);
+}
+
+.billing_main_hd{
+  width: 100%;
+  border: 1px solid var(--fg-five);
+  padding: 5px 0px;
+}
+.billing_main_hd h2{
+  color: var(--cg-two);
+  font-family: var(--font-two);
+  font-weight: 400;
+  font-size: 2rem;
+}
+.billing_main_hd h2 span{
+  color: var(--cg-one);
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.billing_link_con{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.bill_lk1, .bill_lk2{
+  color: var(--cg-one);
+  font-size: 0.7rem;
+  font-family: var(--font-two);
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+}
+.bill_lk1:hover{
+  text-decoration: underline;
+}
+.bill_lk2{
+  color: var(--cg-two);
+}
+.bill_lk2:hover{
+  text-decoration: underline;
+}
+@media (max-width: 1020px) {
+  .Billing_wrap {
+    flex-direction: column;
+    padding: 2% 2%;
+  }
+
+  .billing_side {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .billing_main {
+    width: 100%;
+  }
+}
+
+/* Responsive at 780px */
+@media (max-width: 780px) {
+  .Billing_wrap {
+    padding: 2% 1%;
+    gap: 20px;
+  }
+
+  .bx1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .billing_main_hd h2 {
+    font-size: 1.5rem;
+  }
+
+  .billing_main_hd h2 span {
+    font-size: 1rem;
+  }
+
+  .billing_link_con {
+  }
+
+  .bill_lk1, .bill_lk2 {
+    font-size: 0.6rem;
+  }
+}

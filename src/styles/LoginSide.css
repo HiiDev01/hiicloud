@@ -1,0 +1,194 @@
+.c_wrapper{
+  width: 100%;
+  height: auto;
+}
+.login_side_wrap{
+  padding: 5% 0px 5% 0px;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.login_side_con{
+  width: 40%;
+  min-height: 200px;
+}
+.login_side_head{
+  width: 100%;
+  border-bottom: 1px solid var(--fg-five);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.login_side_head h2{
+  font-size: 2.5rem;
+  color: var(--cg-two);
+  font-family: var(--font-two);
+  font-weight: 300;
+  font-style: normal;
+  text-transform: capitalize;
+}
+.login_side_head span{
+  font-size: 1.2rem;
+  color: var(--cg-one);
+  font-family: var(--font-two);
+  font-weight: 300;
+  font-style: normal;
+}
+
+.email_con{
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+.email_con label{
+  width: 100%;
+  display: block;
+  font-size: 0.9rem;
+  color: var(--cg-four);
+  font-family: var(--font-two);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px 0px 5px 0px;
+}
+.email_con input{
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border: 1px solid var( --bg-five);
+  border-radius: 5px;
+  outline: none;
+  color: var(--cg-one);
+}
+.email_con input:focus{
+  outline: 1px solid var(--bg-ten);
+  box-shadow: 0px 0px 3px var(--bg-ten);
+}
+
+.password_con{
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+}
+.password_con label{
+  width: 100%;
+  display: block;
+  font-size: 0.9rem;
+  color: var(--cg-four);
+  font-family: var(--font-two);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px 0px 5px 0px;
+}
+.password_con input{
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border: 1px solid var( --bg-five);
+  border-radius: 5px;
+  outline: none;
+  color: var(--cg-one);
+}
+.password_con input:focus{
+  outline: 1px solid var(--bg-ten);
+  box-shadow: 0px 0px 3px var(--bg-ten);
+}
+.remember{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0px 0px 15px 0px;
+}
+.remember label{
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-family: var(--font-two);
+  font-weight: 400;
+  color: var(--cg-one);
+}
+
+.login_link{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.login_link button{
+  background-color: var( --cg-three);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: 400;
+  color: var(--fg-two);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login_link button:hover{
+  background-color: var(--cg-two);
+}
+.login_link a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid var(--bg-five);
+  font-family: var(--font-two);
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  color: var(--cg-four);
+}
+.login_link a:hover{
+  background-color: #adb5bd4b;
+}
+
+@media (max-width: 1020px) {
+  .login_side_con{
+    width: 50%;
+  }
+
+  .login_side_head h2{
+    font-size: 2rem;
+  }
+
+  .login_side_head span{
+    font-size: 1rem;
+  }
+
+  .login_link button,
+  .login_link a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .c_wrapper {
+    padding: 0% 0px;
+  }
+  .login_side_wrap{
+    padding: 10% 0px;
+  }
+
+  .login_side_con{
+    width: 80%;
+  }
+
+  .login_side_head h2{
+    font-size: 1.8rem;
+  }
+
+  .login_side_head span{
+    font-size: 0.9rem;
+  }
+
+  .login_link button,
+  .login_link a {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
